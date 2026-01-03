@@ -31,4 +31,4 @@ ENV PATH=/root/.local/bin:$PATH
 EXPOSE 9007
 
 # Run the application (adjust command based on your project)
-CMD ["python", "api_server.py"]
+CMD uvicorn api_server:app --host 0.0.0.0 --port 9007
